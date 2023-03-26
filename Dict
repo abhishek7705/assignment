@@ -1,0 +1,2337 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b6f023b6-72a8-4948-9a9e-8efc9b512806",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l=[1,345,45,\"sudh\",True, 5+7j,345.456 ]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "668a394a-978d-4722-920a-fc5a00d2c60a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5.0"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[5].real"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "1778786c-e7e4-442e-902d-743300b01c56",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7.0"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[5].imag"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "3bec4b2e-90ab-4370-81a9-332070e184b8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "list"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "179043aa-fd0f-463c-b536-0bbf4f52bca1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "b14d686f-7e73-442e-b8fe-9f1d9bdd5738",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "3f8c05e2-7bd7-4f30-ae01-851d7ce7698e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "345"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "76ac4e70-cbca-4d8b-9da3-6075df98f329",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "345.456"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[6]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "272fa454-6094-4167-9d38-a963f154e7f3",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndexError",
+     "evalue": "list index out of range",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mIndexError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [12], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m90\u001b[39;49m\u001b[43m]\u001b[49m\n",
+      "\u001b[0;31mIndexError\u001b[0m: list index out of range"
+     ]
+    }
+   ],
+   "source": [
+    "l[90]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "59c05000-caa7-4de7-b10a-2a0d2ed848c7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "b469b0a6-d4f9-4f97-9e29-ec80fe491f5b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45]"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[0:3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "eceeaade-c554-4f6b-8752-73c762afc3ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "345.456"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "daff0a30-248e-4403-96f6-c3b9d7fe679c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[345.456, (5+7j), True, 'sudh', 45, 345, 1]"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "883afd45-b123-4545-9cc9-34aefa28ce71",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "5f88e860-60fb-47cd-aec6-7bbc4dd01c08",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 45, True, 345.456]"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[::2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "50999ffb-9fa0-407d-a007-77803343055d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "240a4b0d-844c-4df5-b81a-ff440795af70",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s=\"pwskills\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "69c0c89b-cf0c-44c9-bb93-5f0f7b6042a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "can only concatenate list (not \"str\") to list",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [21], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml\u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[43ms\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: can only concatenate list (not \"str\") to list"
+     ]
+    }
+   ],
+   "source": [
+    "l+s"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "47979583-170e-4b53-be7c-cbd0a83a5af5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['p',\n",
+       " 'w',\n",
+       " 's',\n",
+       " 'k',\n",
+       " 'i',\n",
+       " 'l',\n",
+       " 'l',\n",
+       " 's',\n",
+       " 1,\n",
+       " 345,\n",
+       " 45,\n",
+       " 'sudh',\n",
+       " True,\n",
+       " (5+7j),\n",
+       " 345.456]"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list(s)+l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "ab25bc33-0dc1-42c4-8fe6-315e9003d72c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "f346d611-e615-46a4-ab69-b43f0bcaba3b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(l[3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "2a42396b-9f93-402c-a8aa-eecf318ba171",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'su'"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[3][0:2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "a4eac8cd-fd70-44ca-a499-fb2c4351a77f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "bool"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(l[4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "2e891ea8-3021-4ed6-8461-f00e20368c83",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Tr'"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "str(l[4])[0:2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "f192ea86-5027-4eb1-923e-4db672425e6d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "f9480fdc-73bb-4b81-84f0-00b3ca025395",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "can only concatenate list (not \"int\") to list",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [35], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml\u001b[49m\u001b[38;5;241;43m+\u001b[39;49m\u001b[38;5;241;43m5\u001b[39;49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: can only concatenate list (not \"int\") to list"
+     ]
+    }
+   ],
+   "source": [
+    "l+5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "e25734a4-da7c-4fce-92a3-b4b4849b7b9f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1=[3,4,5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "5b2d06f8-1f88-47dc-9926-b6183e59c52f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l+l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "48093193-2bcb-4a15-951a-6fa91b9045e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 4, 5, 3, 4, 5, 3, 4, 5]"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1*3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "4cc224ba-6722-466d-9564-751da0ed839b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "56d48190-4126-4d54-b42c-317a56f1fbf0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "484bb510-0bf2-42ba-a6b0-95f0ebd00393",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456]"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "3dedd82b-034f-4565-b3e2-c43de62f364a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.append(5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "53ba5520-7c44-4a8e-a80c-0cb36dd6e931",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456, 5]"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "f8f4aeb9-2578-40c8-a99c-24fc2a53dc36",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.append(s)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "153463e3-55fc-4f14-ba30-1c8c4ec8d14c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456, 5, 'pwskills']"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "8009bb43-dc13-4572-b43a-2e87e126c095",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'pwskills'"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "4c54d96e-bd3d-43c3-8cba-1d4d80385a8f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456, 5, 'pwskills']"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "8d1c518f-b226-4f1d-8022-3dd7887ac32b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 4, 5]"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "95d72224-811d-4a16-be50-ff047a8c0281",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.append(l1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "8a7c2b92-7d3f-4e97-adc9-a2c16e793012",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456, 5, 'pwskills', [3, 4, 5]]"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "d8f89536-f533-49d8-a1a3-6419ed9439a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[-1][1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "f057becf-eb56-4a48-972d-813c462874e7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 345, 45, 'sudh', True, (5+7j), 345.456, 5, 'pwskills', [3, 4, 5]]"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "5ec95165-5964-4f42-9c97-ff0cca2a17ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'int' object is not iterable",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [55], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mextend\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;241;43m4\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'int' object is not iterable"
+     ]
+    }
+   ],
+   "source": [
+    "l.extend(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "e7f0a4ac-65d6-48f1-af92-f524bec9d3bc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.extend(\"sudh\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "a33645b0-5b79-4384-a776-0e208945088f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1,\n",
+       " 345,\n",
+       " 45,\n",
+       " 'sudh',\n",
+       " True,\n",
+       " (5+7j),\n",
+       " 345.456,\n",
+       " 5,\n",
+       " 'pwskills',\n",
+       " [3, 4, 5],\n",
+       " 's',\n",
+       " 'u',\n",
+       " 'd',\n",
+       " 'h']"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "ae83433f-c21e-4e1a-bbb6-5eb253ea5913",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.extend([3,4,5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "870b675a-0231-4de4-86e9-6dc309bd5049",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1,\n",
+       " 345,\n",
+       " 45,\n",
+       " 'sudh',\n",
+       " True,\n",
+       " (5+7j),\n",
+       " 345.456,\n",
+       " 5,\n",
+       " 'pwskills',\n",
+       " [3, 4, 5],\n",
+       " 's',\n",
+       " 'u',\n",
+       " 'd',\n",
+       " 'h',\n",
+       " 3,\n",
+       " 4,\n",
+       " 5]"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "0c61932a-ad3f-4b41-b39f-bb8b7b24ad0b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 4, 5]"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "85b89da3-7ba8-4cea-85d8-cfd17d4764b7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.insert(2,[2,3,4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "191746a1-58c0-4d2e-9311-4d5e5be350ba",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 4, [2, 3, 4], 5]"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "afa2f91e-4340-46e6-994a-ac7024077ddb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.insert(1,\"sudh\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "56004c09-7814-42c2-a58f-10c2fbaabd62",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 'sudh', 4, [2, 3, 4], 5]"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "2d0e5b2a-89a2-453a-b9be-4681d2a8b536",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.insert(-1,45)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "91370a5c-ba47-49ed-90e6-c7233316a403",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 'sudh', 4, [2, 3, 4], 45, 5]"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "19a28a62-4aa5-4cf6-a4b3-0c20e5ada288",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.insert(0,45)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "46b72c5f-74f1-4a45-b1ad-19bc305954a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 3, 'sudh', 4, [2, 3, 4], 45, 5]"
+      ]
+     },
+     "execution_count": 69,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "c9aa063e-237b-4e59-ae18-3a01c101f061",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 70,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1.pop()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "143478da-1fa8-4141-b7e6-d5d6f727cbe8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 3, 'sudh', 4, [2, 3, 4], 45]"
+      ]
+     },
+     "execution_count": 71,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "bee5cee4-796b-4b1f-bd1a-a7177f32f272",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "45"
+      ]
+     },
+     "execution_count": 72,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1.pop()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "f4a4b0bd-719d-4e9c-9472-8769f96aed2f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 3, 'sudh', 4, [2, 3, 4]]"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "e4c492b7-9571-45a0-8480-7cc4a3990a40",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3, 4]"
+      ]
+     },
+     "execution_count": 74,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1.pop(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "41e81b77-f849-4493-99ad-f847afa31a6c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 3, 'sudh', 4]"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "940b00a0-bfac-4b38-9c0d-f29bd4ca790f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.insert(3,[2,3,4])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "02adeaba-c96d-46cf-8b21-b2bd2eedb0a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 3, 'sudh', [2, 3, 4], 4]"
+      ]
+     },
+     "execution_count": 77,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "c49445e3-929d-4b09-901f-b3314d3ed11b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.remove(3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "id": "a5582ae8-67cd-4cfc-ac97-6d82f3e9ab02",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 'sudh', [2, 3, 4], 4]"
+      ]
+     },
+     "execution_count": 79,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "38346618-496b-4632-9109-71f507a93c5a",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "list.remove(x): x not in list",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [81], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml1\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mremove\u001b[49m\u001b[43m(\u001b[49m\u001b[38;5;241;43m234\u001b[39;49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mValueError\u001b[0m: list.remove(x): x not in list"
+     ]
+    }
+   ],
+   "source": [
+    "l1.remove(234)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "id": "0ec01166-3033-424f-9732-a65a99e0aa7b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1[2].remove(3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "7764146e-4b1c-47c4-91f5-42549ceb565c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 'sudh', [2, 4], 4]"
+      ]
+     },
+     "execution_count": 84,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "id": "b3946904-3775-4110-a1f1-f4da9caa59d9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.append(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "0284fa0d-b255-42c3-9ecb-f7501f136389",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 'sudh', [2, 4], 4, 4]"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "8e2446be-e9bc-4d18-874e-cd6142e881d3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.remove(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "ae27fe07-1c51-4238-a71c-baf0aec28fd7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 'sudh', [2, 4], 4]"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "fcd53c01-fea0-4220-ac57-b648882f459f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[4, [2, 4], 'sudh', 45]"
+      ]
+     },
+     "execution_count": 89,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "e6e0e1ac-f15d-4a42-89b1-1bcd1dbc499a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 'sudh', [2, 4], 4]"
+      ]
+     },
+     "execution_count": 90,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "60ef2b5e-d2c4-497c-a866-d0c690f12f16",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1=l1[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "id": "901c4536-ec2b-428d-a33a-da054b4e65f9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[4, [2, 4], 'sudh', 45]"
+      ]
+     },
+     "execution_count": 92,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "id": "d8b4aadd-01af-4c23-a561-01574defcd8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[4, [2, 4], 'sudh', 45]"
+      ]
+     },
+     "execution_count": 93,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "aca4a648-d0b7-498d-b503-07e23268e867",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.reverse()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "a0e97de8-e162-4fcc-9dd6-01889d9ec2c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 'sudh', [2, 4], 4]"
+      ]
+     },
+     "execution_count": 95,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "30f70994-f729-45aa-8501-27c4214fd44d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 'sudh', [2, 4], 4]"
+      ]
+     },
+     "execution_count": 96,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "id": "18086289-cd88-4641-a4a9-1b5dfed13a1e",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'<' not supported between instances of 'str' and 'int'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [97], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml1\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43msort\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: '<' not supported between instances of 'str' and 'int'"
+     ]
+    }
+   ],
+   "source": [
+    "l1.sort()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "c6edc822-b615-45bc-ba4d-fce6a4755efd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l2=[45,32,90,0,3,4,5,6,7,8,9]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "id": "225d0362-e24f-43ff-9c15-69371268d77a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[45, 32, 90, 0, 3, 4, 5, 6, 7, 8, 9]"
+      ]
+     },
+     "execution_count": 99,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "id": "4a4e038d-272f-4d97-9464-6480df61ccf2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l2.sort()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "id": "24ad2690-69a0-4172-926c-5e0cdad9f833",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[0, 3, 4, 5, 6, 7, 8, 9, 32, 45, 90]"
+      ]
+     },
+     "execution_count": 101,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "id": "99756556-4fc5-41d7-81e8-c8fa47698532",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l3=[34,\"sudh\",45, 12,\"kumar\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "id": "c35e0cf7-98cc-400d-ad86-29835dac9099",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'<' not supported between instances of 'str' and 'int'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [103], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ml3\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43msort\u001b[49m\u001b[43m(\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mTypeError\u001b[0m: '<' not supported between instances of 'str' and 'int'"
+     ]
+    }
+   ],
+   "source": [
+    "l3.sort()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "id": "04b253a3-4e77-4de3-bb0d-4d7e13b578f2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l4=[\"sudh\", \"kumar\", \"Pwskills\", \"data science\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "id": "1eb17ccb-322b-469c-85bc-a454d4fa3845",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l4.sort(reverse=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "id": "52c8f274-b5e2-4f64-b007-03dd80ff74f4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['sudh', 'kumar', 'data science', 'Pwskills']"
+      ]
+     },
+     "execution_count": 111,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "id": "621b0f68-37b3-4b90-80b8-038d0de65ec9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 112,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l4.index(\"sudh\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "id": "503b6577-cdf4-41be-bfa0-40e920e34bef",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 113,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l4.count(\"sudh\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 114,
+   "id": "f7c9b8f2-e241-4401-a376-f029e5dfb93e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s=\"sudh\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 116,
+   "id": "a26fb9ad-381f-45aa-bdc3-744520892237",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l5=[3,4,5,6]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "id": "c94a3ada-3e82-47fc-b8d1-55fe39f95222",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'str' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [119], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ms\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m0\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241m=\u001b[39m\u001b[38;5;124m'\u001b[39m\u001b[38;5;124ma\u001b[39m\u001b[38;5;124m'\u001b[39m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'str' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "s[0]='a'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "id": "8991d1fc-bf14-44dd-98e8-2ed82a8e519f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l5[0]=30"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "3a74ce3e-73e3-432a-b091-4b5aa52ee3c7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[30, 4, 5, 6]"
+      ]
+     },
+     "execution_count": 121,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "id": "2447bc80-60d6-46a8-9290-5d18ee15d48d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'sudh'"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 123,
+   "id": "7fde9086-9e9b-4133-a950-cc9660c8f15e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'audh'"
+      ]
+     },
+     "execution_count": 123,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s.replace('s','a')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "id": "d6e1c8c0-683f-4976-9f39-a4e9a49cdccf",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'sudh'"
+      ]
+     },
+     "execution_count": 124,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "id": "1c6368f8-b656-4f50-95e6-d18399e1539e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t=(2,3,4,5,\"sudh\",45.65,False, 45+457j, [3,4,5])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "id": "97a6acd5-2be8-47f7-8441-02fd3b6baabe",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 3, 4, 5, 'sudh', 45.65, False, (45+457j), [3, 4, 5])"
+      ]
+     },
+     "execution_count": 126,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 127,
+   "id": "d025617c-a9a3-44dc-a567-e659d227a5af",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 127,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "id": "36149398-9d7b-4f39-a1eb-5a61fd3e01e4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9"
+      ]
+     },
+     "execution_count": 128,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "id": "d25f4b55-16f7-48b5-b6f6-702c671bcecd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 129,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "id": "b88a4892-a4d9-4c07-943b-4e45aa2b1566",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 4, 5]"
+      ]
+     },
+     "execution_count": 130,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t[-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "id": "898872c8-306d-43b2-bfa3-6f9bbe64e91e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "([3, 4, 5], (45+457j), False, 45.65, 'sudh', 5, 4, 3, 2)"
+      ]
+     },
+     "execution_count": 131,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "id": "7d790fb6-80e8-4d2f-811b-ddab73da06b7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['sudh', 'kumar', 'data science', 'Pwskills']"
+      ]
+     },
+     "execution_count": 132,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 134,
+   "id": "b3effb10-f0d5-443f-af37-7368b131fc5f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l4[0]=2345"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 135,
+   "id": "dbe07b9e-9d7b-48a1-b06f-e9ae75f63a7b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2345, 'kumar', 'data science', 'Pwskills']"
+      ]
+     },
+     "execution_count": 135,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 136,
+   "id": "3edaa925-3961-47ec-afe9-222c489a3b88",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 3, 4, 5, 'sudh', 45.65, False, (45+457j), [3, 4, 5])"
+      ]
+     },
+     "execution_count": 136,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 137,
+   "id": "6609de56-0230-4c12-abe7-4ad2daa220a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'tuple' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn [137], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43mt\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m0\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241m=\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124msudh\u001b[39m\u001b[38;5;124m\"\u001b[39m\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "t[0]=\"sudh\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "id": "970c65e4-7375-43f4-8703-97ef49d693f7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "([3, 4, 5], (45+457j), False, 45.65, 'sudh', 5, 4, 3, 2)"
+      ]
+     },
+     "execution_count": 138,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "id": "6027b550-f629-4eff-a36d-9541135c33a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 139,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t.count(50)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "id": "fcd1285f-21fe-47b2-80b3-68ba7a185731",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 140,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t.index(False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 141,
+   "id": "192fa25b-9d3b-4073-906c-ee7e62bf40c2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(2, 3, 4, 5, 'sudh', 45.65, False, (45+457j), [3, 4, 5])"
+      ]
+     },
+     "execution_count": 141,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "t"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "id": "3e48c5a5-2849-4318-92b1-eb19583673e2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s1={}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 145,
+   "id": "385a0acf-b484-426a-b33c-8b62fae778c5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 145,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 146,
+   "id": "77a3a93a-0c41-415a-941a-4729da51b8b6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s2={2,3,4,55,6}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 147,
+   "id": "fcb36678-f771-4769-a52a-78ced39fb1d9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "set"
+      ]
+     },
+     "execution_count": 147,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 148,
+   "id": "f8bda449-e6a3-4fb9-92b2-d4b55885384f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s3={324,456,456, \"sudh\",45+45j, 34.465 ,(3,4,5)}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 149,
+   "id": "a4a52886-6eb7-4b76-b44c-a280d9c68768",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{(3, 4, 5), (45+45j), 324, 34.465, 456, 'sudh'}"
+      ]
+     },
+     "execution_count": 149,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f9d27078-8620-4921-9d2b-e0cded3abdb1",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
