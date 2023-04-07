@@ -1,0 +1,559 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "0b2e7049-b4db-4ec7-95de-d604defb1019",
+   "metadata": {},
+   "source": [
+    "\"Oops\" stands for object-Orirnted Programming System"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "eb52c531-7f97-4f7b-96a2-e848f4b095b0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "ed14d8c4-e2d8-4973-82b0-774e339a1de3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "4b360f1e-2f5c-464e-af5d-fe504b46c73d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(\"pwskills\"))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "8fd5309c-52f4-40ec-9a6d-a1953503e596",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class test:\n",
+    "    pass"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "98d7f82a-8805-4e21-9871-f4cc2d3289cb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=test()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "f182e2dd-00d0-4200-ba6b-4bbd5f407046",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "__main__.test"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "8807297a-d6ff-441b-bddb-1e54d6579450",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class '__main__.test'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "c56ab32b-8848-435d-acba-a4beb20d66c7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class pwskills:\n",
+    "    \n",
+    "    def welcome_msg(self):\n",
+    "        print(\"welcome to pwskills\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "8dce546e-2b8f-4661-86a7-10cdfde37d67",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "rohan=pwskills()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "837f5c4c-fe23-43c9-a82b-bddebe15d11b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class '__main__.pwskills'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(rohan))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "dc8665ab-0ed9-4756-a027-6af7b8ec361e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to pwskills\n"
+     ]
+    }
+   ],
+   "source": [
+    "rohan.welcome_msg()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "d0d6f4fe-b753-4bff-adbf-ab9c9eb47ebe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "gaurav=pwskills()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "337a76e2-e95f-4733-b148-552288797cee",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to pwskills\n"
+     ]
+    }
+   ],
+   "source": [
+    "gaurav.welcome_msg()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "82d7acda-7376-481e-a5b6-3b151c79efae",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class pwskills1:\n",
+    "    \n",
+    "    def  __init__(self ,phone_number,email_id,student_id):\n",
+    "        self.phone_number=phone_number\n",
+    "        self.email_id=email_id\n",
+    "        self.student_id=student_id\n",
+    "        \n",
+    "    def return_student_details(self):\n",
+    "        return self.student_id , self.phone_number , self.email_id"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "9e4a6295-beb6-436b-b45f-41ffd94b2e69",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "rohan=pwskills1(1234567890,\"rohan@123.com\",102)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "71ad13bb-94e8-4c6c-8f3c-d3639b566b75",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(102, 1234567890, 'rohan@123.com')"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rohan.return_student_details()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "10f89887-6b0d-4100-b8be-ef702b3ff051",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "gaurav=pwskills1(1234567890,\"gaurav@gemail.com\",110)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "30a7d9e4-1443-469e-a26b-667ff89202b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(110, 1234567890, 'gaurav@gemail.com')"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "gaurav.return_student_details()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "5aab6bcc-651a-4dcb-b102-6bea0a1a49a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1234567890"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rohan.phone_number"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "c0d1eec1-be37-4ca0-b840-6122d518c973",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'rohan@123.com'"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rohan.email_id"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "50ea9e3a-c535-4bba-a074-77f5641e8464",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "102"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rohan.student_id"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "id": "4817d949-9a81-4b03-9faf-3a6715c9809a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class pwskills2:\n",
+    "    \n",
+    "    def  __init__(self ,phone_number,email_id,student_id):\n",
+    "        self.phone_number1=phone_number\n",
+    "        self.email_id1=email_id\n",
+    "        self.student_id1=student_id\n",
+    "        \n",
+    "    def return_student_details(self):\n",
+    "        return self.student_id1 , self.phone_number1 , self.email_id1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "id": "30c5e1be-7ed4-458c-b264-9f3d3689f814",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sudh=pwskills2(999948103,\"sudh123@gmail.com\",112)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "id": "0ae469a3-c8d4-4eed-913e-bdbede01196e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<__main__.pwskills2 at 0x7f2c74111330>"
+      ]
+     },
+     "execution_count": 96,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sudh"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "id": "55fabf2b-af66-42dc-8192-6c0ecaeeb4d8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(112, 999948103, 'sudh123@gmail.com')"
+      ]
+     },
+     "execution_count": 97,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sudh.return_student_details()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "d47c252d-11ad-429d-8867-0ba9a167d1af",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "999948103"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sudh.phone_number1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "a1abf448-0dd8-49c3-89ad-f5888d9e15e7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'sudh123@gmail.com'"
+      ]
+     },
+     "execution_count": 69,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sudh.email_id1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "ae113ae2-9aa1-4db7-9ae3-884311e7a34c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "112"
+      ]
+     },
+     "execution_count": 70,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sudh.student_id1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "c6319529-2e38-4b3b-9ea5-e76bcd2edfd7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class pwskills2:\n",
+    "    \n",
+    "    def  __init__(sudh ,phone_number,email_id,student_id):\n",
+    "        sudh.phone_number1=phone_number\n",
+    "        sudh.email_id1=email_id\n",
+    "        sudh.student_id1=student_id\n",
+    "        \n",
+    "    def return_student_details(self):\n",
+    "        return sudh.student_id1 , sudh.phone_number1 , sudh.email_id1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "id": "16c1d72d-1813-478e-9afa-d1dd2dbf6cc5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "rohan=pwskills2(23456,\"rohan234@gmail.com\",123)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 100,
+   "id": "7639f41c-506c-4df6-8729-8d2c9cbbb0da",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "23456"
+      ]
+     },
+     "execution_count": 100,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "rohan.phone_number1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b9d47e6a-24c6-4f51-afeb-ae2d5dd9bb4f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
